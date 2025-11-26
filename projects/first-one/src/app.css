@@ -1,0 +1,102 @@
+.article-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	background: #ffffff;
+	border: 1px solid #e6e6e6;
+	padding: 0.75rem 1rem;
+	border-radius: 8px;
+	max-width: 560px;
+	width: 100%;
+	box-shadow: 0 1px 3px rgba(16, 24, 40, 0.03);
+	color: #222;
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.head-card {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.img-card {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #f0f0f0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.div-card {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.strong1-card {
+	font-size: 0.95rem;
+	color: #111827;
+}
+
+.span1-card {
+	font-size: 0.78rem;
+	color: #6b7280;
+}
+
+.aside1-card {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+.buttonfollow-card {
+	background: #2563eb;
+	color: white;
+	border: none;
+	padding: 0.45rem 0.9rem;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 0.9rem;
+	transition: background 0.15s ease, transform 0.08s ease;
+}
+
+.buttonfollow-card:hover {
+	background: #1e40af;
+	transform: translateY(-1px);
+}
+
+.buttonfollow-card:active {
+	transform: translateY(0);
+}
+
+.buttonfollow-card:focus {
+	outline: 3px solid rgba(37,99,235,0.18);
+	outline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+	.article-card {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.aside1-card {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 0.5rem;
+	}
+
+	.img-card {
+		width: 48px;
+		height: 48px;
+	}
+}
+
+/* Small utility tweaks */
+img[alt] { display: block; }
+
+ 
